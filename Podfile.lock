@@ -1,0 +1,24 @@
+PODS:
+  - FXBlurView (1.5.3)
+  - LRImageManager (0.3):
+    - Reachability
+  - LRNotificationObserver (0.1)
+  - Reachability (3.1.1)
+  - Typhoon (1.7.9):
+    - Typhoon/no-arc
+  - Typhoon/no-arc (1.7.9)
+
+DEPENDENCIES:
+  - FXBlurView (~> 1.5.3)
+  - LRImageManager (~> 0.3)
+  - LRNotificationObserver (~> 0.1)
+  - Typhoon (~> 1.7.9)
+
+SPEC CHECKSUMS:
+  FXBlurView: 8d662dd5b4ba15a1a0e97235501326fbdfb2b755
+  LRImageManager: 7d619312d44926c246f160363eba50903b37d29a
+  LRNotificationObserver: 017f5ee9e826c1705641127999dd66b2e2d1efe0
+  Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  Typhoon: 0dbff578f2b1c55f0fc1b389118f7a4dc727a865
+
+COCOAPODS: 0.29.0
