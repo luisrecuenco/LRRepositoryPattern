@@ -18,7 +18,11 @@
 		3311E3DB18B29B3700BA854A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3311E3C018B29B3600BA854A /* Foundation.framework */; };
 		3311E3DC18B29B3700BA854A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3311E3C418B29B3700BA854A /* UIKit.framework */; };
 		3311E3E418B29B3700BA854A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3311E3E218B29B3700BA854A /* InfoPlist.strings */; };
-		3311E3E618B29B3700BA854A /* LRRepositoryPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3311E3E518B29B3700BA854A /* LRRepositoryPatternTests.m */; };
+		331B944618B2BBA9009A8E57 /* LRDownloadShowsInteractorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 331B944518B2BBA9009A8E57 /* LRDownloadShowsInteractorTest.m */; };
+		331B944818B2BF05009A8E57 /* LRDownloadFancyGrayImageInteractorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 331B944718B2BF05009A8E57 /* LRDownloadFancyGrayImageInteractorTest.m */; };
+		331B944A18B2C314009A8E57 /* LRTVShowDetailViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 331B944918B2C314009A8E57 /* LRTVShowDetailViewControllerTest.m */; };
+		3361F11B18B2AB3800DB7878 /* LRTVShowsListViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3361F11A18B2AB3800DB7878 /* LRTVShowsListViewControllerTest.m */; };
+		3361F11E18B2B70F00DB7878 /* LRSeeTVShowDetailInteractorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3361F11D18B2B70F00DB7878 /* LRSeeTVShowDetailInteractorTest.m */; };
 		33A2C11118B29FDC00BBBB1F /* LRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A2C10C18B29FDC00BBBB1F /* LRBaseModel.m */; };
 		33A2C11218B29FDC00BBBB1F /* LRTVShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A2C11018B29FDC00BBBB1F /* LRTVShow.m */; };
 		33A2C11518B29FEF00BBBB1F /* LRAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A2C11418B29FEF00BBBB1F /* LRAssembly.m */; };
@@ -38,6 +42,7 @@
 		33A2C14218B2A0A300BBBB1F /* LRTVShowNetworkStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A2C13F18B2A0A300BBBB1F /* LRTVShowNetworkStorage.m */; };
 		33A2C14618B2A0BC00BBBB1F /* LRTVShowRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A2C14518B2A0BC00BBBB1F /* LRTVShowRepository.m */; };
 		33A2C14918B2A10A00BBBB1F /* LRTVShowDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A2C14818B2A10A00BBBB1F /* LRTVShowDetailView.m */; };
+		8BE4F6F43C3C48E8BF792F13 /* libPods-LRRepositoryPatternTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5FD4BD7734416C95011F50 /* libPods-LRRepositoryPatternTests.a */; };
 		B256014B507840B480B9B490 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A682F45CB9F3471A8B23CA29 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,7 +73,11 @@
 		3311E3D918B29B3700BA854A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3311E3E118B29B3700BA854A /* LRRepositoryPatternTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LRRepositoryPatternTests-Info.plist"; sourceTree = "<group>"; };
 		3311E3E318B29B3700BA854A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3311E3E518B29B3700BA854A /* LRRepositoryPatternTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRRepositoryPatternTests.m; sourceTree = "<group>"; };
+		331B944518B2BBA9009A8E57 /* LRDownloadShowsInteractorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRDownloadShowsInteractorTest.m; sourceTree = "<group>"; };
+		331B944718B2BF05009A8E57 /* LRDownloadFancyGrayImageInteractorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRDownloadFancyGrayImageInteractorTest.m; sourceTree = "<group>"; };
+		331B944918B2C314009A8E57 /* LRTVShowDetailViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTVShowDetailViewControllerTest.m; sourceTree = "<group>"; };
+		3361F11A18B2AB3800DB7878 /* LRTVShowsListViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTVShowsListViewControllerTest.m; sourceTree = "<group>"; };
+		3361F11D18B2B70F00DB7878 /* LRSeeTVShowDetailInteractorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRSeeTVShowDetailInteractorTest.m; sourceTree = "<group>"; };
 		33A2C10B18B29FDC00BBBB1F /* LRBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRBaseModel.h; sourceTree = "<group>"; };
 		33A2C10C18B29FDC00BBBB1F /* LRBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRBaseModel.m; sourceTree = "<group>"; };
 		33A2C10D18B29FDC00BBBB1F /* LRBaseModelMappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRBaseModelMappings.h; sourceTree = "<group>"; };
@@ -110,6 +119,8 @@
 		33A2C14518B2A0BC00BBBB1F /* LRTVShowRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTVShowRepository.m; sourceTree = "<group>"; };
 		33A2C14718B2A10A00BBBB1F /* LRTVShowDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRTVShowDetailView.h; sourceTree = "<group>"; };
 		33A2C14818B2A10A00BBBB1F /* LRTVShowDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRTVShowDetailView.m; sourceTree = "<group>"; };
+		54CD90B35C9340C6A265C50B /* Pods-LRRepositoryPatternTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRRepositoryPatternTests.xcconfig"; path = "Pods/Pods-LRRepositoryPatternTests.xcconfig"; sourceTree = "<group>"; };
+		5A5FD4BD7734416C95011F50 /* libPods-LRRepositoryPatternTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LRRepositoryPatternTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A682F45CB9F3471A8B23CA29 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,6 +143,7 @@
 				3311E3DA18B29B3700BA854A /* XCTest.framework in Frameworks */,
 				3311E3DC18B29B3700BA854A /* UIKit.framework in Frameworks */,
 				3311E3DB18B29B3700BA854A /* Foundation.framework in Frameworks */,
+				8BE4F6F43C3C48E8BF792F13 /* libPods-LRRepositoryPatternTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +158,7 @@
 				3311E3BF18B29B3600BA854A /* Frameworks */,
 				3311E3BE18B29B3600BA854A /* Products */,
 				1609647D2A72418EA2F35029 /* Pods.xcconfig */,
+				54CD90B35C9340C6A265C50B /* Pods-LRRepositoryPatternTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +179,7 @@
 				3311E3C418B29B3700BA854A /* UIKit.framework */,
 				3311E3D918B29B3700BA854A /* XCTest.framework */,
 				A682F45CB9F3471A8B23CA29 /* libPods.a */,
+				5A5FD4BD7734416C95011F50 /* libPods-LRRepositoryPatternTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,7 +216,11 @@
 		3311E3DF18B29B3700BA854A /* LRRepositoryPatternTests */ = {
 			isa = PBXGroup;
 			children = (
-				3311E3E518B29B3700BA854A /* LRRepositoryPatternTests.m */,
+				3361F11A18B2AB3800DB7878 /* LRTVShowsListViewControllerTest.m */,
+				331B944918B2C314009A8E57 /* LRTVShowDetailViewControllerTest.m */,
+				331B944518B2BBA9009A8E57 /* LRDownloadShowsInteractorTest.m */,
+				3361F11D18B2B70F00DB7878 /* LRSeeTVShowDetailInteractorTest.m */,
+				331B944718B2BF05009A8E57 /* LRDownloadFancyGrayImageInteractorTest.m */,
 				3311E3E018B29B3700BA854A /* Supporting Files */,
 			);
 			path = LRRepositoryPatternTests;
@@ -381,9 +399,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3311E3EC18B29B3700BA854A /* Build configuration list for PBXNativeTarget "LRRepositoryPatternTests" */;
 			buildPhases = (
+				95AE1169B31347C280ABB1FD /* Check Pods Manifest.lock */,
 				3311E3D418B29B3700BA854A /* Sources */,
 				3311E3D518B29B3700BA854A /* Frameworks */,
 				3311E3D618B29B3700BA854A /* Resources */,
+				C39F843D03A8443893B68AD1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,6 +484,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		95AE1169B31347C280ABB1FD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C39F843D03A8443893B68AD1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-LRRepositoryPatternTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D0A1438CFED24EC8A952A7D7 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,7 +563,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3311E3E618B29B3700BA854A /* LRRepositoryPatternTests.m in Sources */,
+				331B944618B2BBA9009A8E57 /* LRDownloadShowsInteractorTest.m in Sources */,
+				3361F11E18B2B70F00DB7878 /* LRSeeTVShowDetailInteractorTest.m in Sources */,
+				3361F11B18B2AB3800DB7878 /* LRTVShowsListViewControllerTest.m in Sources */,
+				331B944818B2BF05009A8E57 /* LRDownloadFancyGrayImageInteractorTest.m in Sources */,
+				331B944A18B2C314009A8E57 /* LRTVShowDetailViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +703,7 @@
 		};
 		3311E3ED18B29B3700BA854A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CD90B35C9340C6A265C50B /* Pods-LRRepositoryPatternTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LRRepositoryPattern.app/LRRepositoryPattern";
@@ -672,6 +727,7 @@
 		};
 		3311E3EE18B29B3700BA854A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CD90B35C9340C6A265C50B /* Pods-LRRepositoryPatternTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LRRepositoryPattern.app/LRRepositoryPattern";

@@ -1,24 +1,39 @@
 PODS:
+  - Expecta (0.2.3)
   - FXBlurView (1.5.3)
   - LRImageManager (0.3):
     - Reachability
   - LRNotificationObserver (0.1)
+  - OCHamcrest (3.0.1)
+  - OCMock (2.2.3)
+  - OCMockito (1.1.0):
+    - OCHamcrest (~> 3.0)
   - Reachability (3.1.1)
+  - Specta (0.2.1)
   - Typhoon (1.7.9):
     - Typhoon/no-arc
   - Typhoon/no-arc (1.7.9)
 
 DEPENDENCIES:
+  - Expecta (~> 0.2.3)
   - FXBlurView (~> 1.5.3)
   - LRImageManager (~> 0.3)
   - LRNotificationObserver (~> 0.1)
+  - OCMock (~> 2.2.3)
+  - OCMockito (~> 1.1.0)
+  - Specta (~> 0.2.1)
   - Typhoon (~> 1.7.9)
 
 SPEC CHECKSUMS:
+  Expecta: dbc4a27fabb853bdd2e907e33f11ee43a9a47d0c
   FXBlurView: 8d662dd5b4ba15a1a0e97235501326fbdfb2b755
   LRImageManager: 7d619312d44926c246f160363eba50903b37d29a
   LRNotificationObserver: 017f5ee9e826c1705641127999dd66b2e2d1efe0
+  OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
+  OCMock: 74e4ddbcef134170dcc844f91c691f13868075d7
+  OCMockito: 317fa0cf75c9b0d73d2be335789c556537be7fd2
   Reachability: be4883bb93f31e38266ae3365e5600a317aae735
+  Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
   Typhoon: 0dbff578f2b1c55f0fc1b389118f7a4dc727a865
 
 COCOAPODS: 0.29.0

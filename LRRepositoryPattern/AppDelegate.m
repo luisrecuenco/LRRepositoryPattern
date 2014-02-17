@@ -29,6 +29,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    if (isRunningTests()) return YES;
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     TyphoonComponentFactory *factory = [[TyphoonBlockComponentFactory alloc] initWithAssembly:[LRAssembly assembly]];
@@ -41,6 +43,13 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+NS_INLINE BOOL isRunningTests(void)
+{
+    NSDictionary *environment = [[NSProcessInfo processInfo] environment];
+    NSString *injectBundle = environment[@"XCInjectBundle"];
+    return [[injectBundle pathExtension] isEqualToString:@"xctest"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

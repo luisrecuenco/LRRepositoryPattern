@@ -37,9 +37,9 @@
 @property (nonatomic, strong, readonly) LRTVShowDetailViewControllerProvider *showDetailViewControllerProvider;
 
 - (instancetype)initWithDownloadTVShowsInteractor:(LRDownloadShowsInteractor *)downloadShowsInteractor
-                      seeTVShowDetailInteractor:(LRSeeTVShowDetailInteractor *)seeTVShowDetailInteractor
-                     tvshowsTableViewController:(LRTVShowsTableViewController *)tvshowsTableViewController
-                                  showsListView:(id<LRTVShowsListView>)showsListView
-               showDetailViewControllerProvider:(LRTVShowDetailViewControllerProvider *)showDetailViewControllerProvider;
+                        seeTVShowDetailInteractor:(LRSeeTVShowDetailInteractor *)seeTVShowDetailInteractor
+                       tvshowsTableViewController:(LRTVShowsTableViewController *)tvshowsTableViewController
+                                    showsListView:(id<LRTVShowsListView>)showsListView
+                 showDetailViewControllerProvider:(LRTVShowDetailViewControllerProvider *)showDetailViewControllerProvider;
 
 @end
