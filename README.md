@@ -26,4 +26,4 @@ If you want to contribute to the project just follow this steps:
 
 ## License
 
-LRNotificationObserver is available under the MIT license. See the [LICENSE file](https://github.com/luisrecuenco/LRRepositoryPattern/blob/master/LICENSE) for more info.
+LRRepositoryPattern is available under the MIT license. See the [LICENSE file](https://github.com/luisrecuenco/LRRepositoryPattern/blob/master/LICENSE) for more info.
