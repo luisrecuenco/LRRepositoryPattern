@@ -46,7 +46,7 @@ static CGFloat const kBlurIterations = 5;
                                size:CGSizeZero
                   completionHandler:^(UIImage *image, NSError *error) {
                       
-                      __weak UIImageView *sImageView = wImageView;
+                      __strong UIImageView *sImageView = wImageView;
                       
                       UIGraphicsBeginImageContextWithOptions(image.size, YES, 0.0);
                       CGRect imageRect = CGRectMake(0, 0, image.size.width, image.size.height);
