@@ -62,7 +62,7 @@
                completionBlock:(LRTVShowRepositoryRetrieveCompletionBlock)block
 {
     __weak typeof (self) wself = self;
-    [self retrieveTVShowsStatingInCacheLevel:LRTVShowRepositoryCacheLevelFirst
+    [self retrieveTVShowsStartingInCacheLevel:LRTVShowRepositoryCacheLevelFirst
                                        queue:queue
                              completionBlock:^(NSArray *tvshows, NSError *error) {
                                  
@@ -73,7 +73,7 @@
                              }];
 }
 
-- (void)retrieveTVShowsStatingInCacheLevel:(LRTVShowRepositoryCacheLevel)cacheLevel
+- (void)retrieveTVShowsStartingInCacheLevel:(LRTVShowRepositoryCacheLevel)cacheLevel
                                      queue:(NSOperationQueue *)queue
                            completionBlock:(LRRetrieveTVShowsCompletionBlock)block
 {
@@ -87,7 +87,7 @@
         {
             LRTVShowRepositoryCacheLevel nextCacheLevel = ++_cacheLevel;
             
-            [self retrieveTVShowsStatingInCacheLevel:nextCacheLevel
+            [self retrieveTVShowsStartingInCacheLevel:nextCacheLevel
                                                queue:queue
                                      completionBlock:block];
         }
