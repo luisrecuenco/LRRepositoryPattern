@@ -48,7 +48,7 @@
 {
     LRTVShow *tvshow = self.tvshows[indexPath.row];
     
-    [cell.posterImageView setImageWithURL:tvshow.posterURL];
+    [cell.posterImageView lr_setImageWithURL:tvshow.posterURL];
     cell.nameLabel.text = tvshow.title;
     cell.ageLabel.text = tvshow.network;
     cell.sexLabel.text = tvshow.overview;
