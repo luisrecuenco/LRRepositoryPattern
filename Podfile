@@ -1,3 +1,5 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 pod 'Typhoon', '~> 1.7.9'
 pod 'LRNotificationObserver', '~> 0.1.2'
 pod 'LRImageManager', '~> 1.0'
