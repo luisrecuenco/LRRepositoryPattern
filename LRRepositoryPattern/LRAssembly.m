@@ -40,27 +40,35 @@
 
 - (id)tvshowsListViewController
 {
-    return [TyphoonDefinition withClass:[LRTVShowsListViewController class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(initWithDownloadTVShowsInteractor:seeTVShowDetailInteractor:tvshowsTableViewController:showsListView:showDetailViewControllerProvider:);
-        [initializer injectWithDefinition:[self downloadShowsInteractor]];
-        [initializer injectWithDefinition:[self seeTVShowDetailInteractor]];
-        [initializer injectWithDefinition:[self tvshowsTableViewController]];
-        [initializer injectWithDefinition:[self tvshowsListView]];
-        [initializer injectWithDefinition:[self tvshowDetailViewControllerProvider]];
+    return [TyphoonDefinition withClass:[LRTVShowsListViewController class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer: @selector(initWithDownloadTVShowsInteractor:seeTVShowDetailInteractor:tvshowsTableViewController:showsListView:showDetailViewControllerProvider:)
+                        parameters: ^(TyphoonMethod *initializer)
+         {
+             [initializer injectParameterWith:[self downloadShowsInteractor]];
+             [initializer injectParameterWith:[self seeTVShowDetailInteractor]];
+             [initializer injectParameterWith:[self tvshowsTableViewController]];
+             [initializer injectParameterWith:[self tvshowsListView]];
+             [initializer injectParameterWith:[self tvshowDetailViewControllerProvider]];
+             
+         }];
     }];
 }
 
-- (id)downloadShowsInteractor
-{
-    return [TyphoonDefinition withClass:[LRDownloadShowsInteractor class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(initWithTVShowRepository:);
-        [initializer injectWithDefinition:[self tvshowRepository]];
+- (id)downloadShowsInteractor {
+    return [TyphoonDefinition withClass:[LRDownloadShowsInteractor class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer: @selector(initWithTVShowRepository:)
+                        parameters: ^(TyphoonMethod *initializer)
+         {
+             [initializer injectParameterWith: [self tvshowRepository]];
+         }
+         ];
     }];
 }
+
 
 - (id)seeTVShowDetailInteractor
 {
-    return [TyphoonDefinition withClass:[LRSeeTVShowDetailInteractor class]];;
+    return [TyphoonDefinition withClass:[LRSeeTVShowDetailInteractor class]];
 }
 
 - (id)tvshowsTableViewController
@@ -75,10 +83,13 @@
 
 - (id)tvshowDetailViewControllerProvider
 {
-    return [TyphoonDefinition withClass:[LRTVShowDetailViewControllerProvider class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(initWithShowDetailView:downloadFancyGrayImageInteractor:);
-        [initializer injectWithDefinition:[self tvshowDetailView]];
-        [initializer injectWithDefinition:[self downloadFancyGrayImageInteractor]];
+    return [TyphoonDefinition withClass:[LRTVShowDetailViewControllerProvider class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer: @selector(initWithShowDetailView:downloadFancyGrayImageInteractor:)
+                        parameters: ^(TyphoonMethod *initializer)
+         {
+             [initializer injectParameterWith: [self tvshowDetailView]];
+             [initializer injectParameterWith: [self downloadFancyGrayImageInteractor]];
+         }];
     }];
 }
 
@@ -89,29 +100,35 @@
 
 - (id)downloadFancyGrayImageInteractor
 {
-    return [TyphoonDefinition withClass:[LRDownloadFancyGrayImageInteractor class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(initWithImageManager:);
-        [initializer injectWithDefinition:[self imageManager]];
+    return [TyphoonDefinition withClass:[LRDownloadFancyGrayImageInteractor class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer: @selector(initWithImageManager:)
+                        parameters: ^(TyphoonMethod *initializer)
+         {
+             [initializer injectParameterWith: [self imageManager]];
+         }];
     }];
 }
 
 - (id)imageManager
 {
-    return [TyphoonDefinition withClass:[LRImageManager class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(init);
-    } properties:^(TyphoonDefinition *definition) {
+    return [TyphoonDefinition withClass:[LRImageManager class] configuration:^(TyphoonDefinition *definition) {
+       // [definition useInitializer: @selector(init)];
         definition.scope = TyphoonScopeSingleton;
+        
     }];
 }
 
 - (id)tvshowRepository
 {
-    return [TyphoonDefinition withClass:[LRTVShowRepository class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(initWithFirstLevelCacheStorage:secondLevelCacheStorage:thirdLevelCacheStorage:backgroundObserver:);
-        [initializer injectWithDefinition:[self firstLevelCacheStorage]];
-        [initializer injectWithDefinition:[self secondLevelCacheStorage]];
-        [initializer injectWithDefinition:[self thirdLevelCacheStorage]];
-        [initializer injectWithDefinition:[self backgroundObserver]];
+    return [TyphoonDefinition withClass:[LRTVShowRepository class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer: @selector(initWithFirstLevelCacheStorage:secondLevelCacheStorage:thirdLevelCacheStorage:backgroundObserver:)
+                        parameters: ^(TyphoonMethod *initializer)
+         {
+             [initializer injectParameterWith: [self firstLevelCacheStorage]];
+             [initializer injectParameterWith: [self secondLevelCacheStorage]];
+             [initializer injectParameterWith: [self thirdLevelCacheStorage]];
+             [initializer injectParameterWith: [self backgroundObserver]];
+         }];
     }];
 }
 
@@ -127,32 +144,38 @@
 
 - (id)thirdLevelCacheStorage
 {
-    return [TyphoonDefinition withClass:[LRTVShowNetworkStorage class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(initWithURLSession:tvshowParser:);
-        [initializer injectWithDefinition:[self urlSession]];
-        [initializer injectWithDefinition:[self tvshowParser]];
+    return [TyphoonDefinition withClass:[LRTVShowNetworkStorage class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer: @selector(initWithURLSession:tvshowParser:)
+                        parameters: ^(TyphoonMethod *initializer)
+         {
+             [initializer injectParameterWith: [self urlSession]];
+             [initializer injectParameterWith: [self tvshowParser]];
+         }];
     }];
 }
 
 - (id)backgroundObserver
 {
-    return [TyphoonDefinition withClass:[LRNotificationObserver class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(initWithNotificationCenter:);
-        [initializer injectWithDefinition:[self notificationCenter]];
+    return [TyphoonDefinition withClass:[LRNotificationObserver class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer: @selector(initWithNotificationCenter:)
+                        parameters: ^(TyphoonMethod *initializer)
+         {
+             [initializer injectParameterWith: [self notificationCenter]];
+         }];
     }];
 }
 
 - (id)notificationCenter
 {
-    return [TyphoonDefinition withClass:[NSNotificationCenter class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(defaultCenter);
+    return [TyphoonDefinition withClass:[NSNotificationCenter class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(defaultCenter) ];
     }];
 }
 
 - (id)urlSession
 {
-    return [TyphoonDefinition withClass:[NSURLSession class] initialization:^(TyphoonInitializer *initializer) {
-        initializer.selector = @selector(sharedSession);
+    return [TyphoonDefinition withClass:[NSURLSession class] configuration:^(TyphoonDefinition *definition) {
+        [definition useInitializer:@selector(sharedSession) ];
     }];
 }
 

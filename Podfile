@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-pod 'Typhoon', '~> 1.7.9'
+pod 'Typhoon', '~> 3.1.8'
 pod 'LRNotificationObserver', '~> 0.1.2'
 pod 'LRImageManager', '~> 1.0'
 pod 'FXBlurView', '~> 1.5.3'
